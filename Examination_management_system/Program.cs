@@ -192,8 +192,14 @@
 
             while (true)
             {
-                Console.Write("\nAre you (1) Doctor or (2) Student? ");
+                Console.Write("\nAre you (1) Doctor or (2) Student? (or type 'exit' to quit): ");
                 string mode = Console.ReadLine();
+
+                if (mode == "exit" || mode == "quit")
+{
+    Console.WriteLine("Exiting system... Goodbye!");
+    break;
+}
 
                 if (mode == "1")
                 {
